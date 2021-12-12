@@ -1,4 +1,11 @@
-   
+   body{
+     background-color: #f4f4f4;
+     color: #555;
+     font-family: Arial, Helvetica, sans-serif;
+     font-size: 16px;
+     line-height:1.6em;
+    margin: 0; 
+}
 .navigation{
     font-family: Arial, Helvetica, sans-serif;
     word-spacing: 1em;
@@ -17,19 +24,40 @@
 
 .navigation a {
   text-decoration: none;
-  display: inline;
-  padding: 1em;
+  display: block;
+  padding: 1.5em;
   color: white;
 }
 
 .navigation a:hover {
     background: #1565C0;
-    display: inline;
+    display: block;
     
 
     
   }
 
- .background{
-   background-image: url;(..' /images/GreysAnatomy-1.jpg')
- }
+
+ .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+  grid-gap: 1rem;
+}
+.grid > div {
+  background: #EDE7F6;
+  padding: 1.5rem;
+  border-radius: 1rem;
+}
+body {
+  margin: 1rem;
+  font: 18px system-ui;
+}
+
+*{ margin: 0; padding: 0; font-family: 'Ubuntu', sans-serif;}
+body{ background: white;}
+.contact-us{ width: 450px; background: rgb(255, 255, 255); padding: 50px; margin: 100px auto; border-radius: 30px;}
+.title h1{ color: #535274; letter-spacing: 5px; margin-bottom: 25px; text-align: center;}
+.form{position: relative;}
+.form,.form-items{position: relative; width: 90%;}
+.form-items .input{ width: 100%; margin-bottom: 12px; padding: 15px 40px;
+
